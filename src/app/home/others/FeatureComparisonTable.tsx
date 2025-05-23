@@ -59,7 +59,7 @@ const FeatureComparisonTable: React.FC = () => {
               <ParagraphLink1>Feature</ParagraphLink1>
             </th>
             <th className="px-6 py-4 border-l-2 border-b-2 border-primary">
-                          <img src="/images/logo2.svg" className="h-[23px]" alt="" />
+              <img src="/images/logo2.svg" className="h-[23px] min-h-[24px]" alt="" />
             </th>
             <th className="px-6 py-4 border-l-2 border-b-2 border-primary">
               <ParagraphLink1>Legacy Tools</ParagraphLink1>

@@ -31,14 +31,14 @@ const Hero = () => {
                 payroll — all in one platform.
               </Paragraph3>
 
-              <div className=" flex w-full justify-center gap-[32px] items-center">
+              <div className=" flex w-full flex-col sm:flex-row justify-center gap-[32px] items-center">
                 <Button
                   text="Get started for free"
                   href="/"
                   isLink={true}
                   backgroundColor="bg-primary"
                   border="border-primary border-2"
-                  additionalClasses="border-secondary- text-white"
+                  additionalClasses="border-secondary- text-white w-full sm:w-fit"
                 />
                 <Button
                   text="Schedule a Demo"
@@ -46,7 +46,7 @@ const Hero = () => {
                   isLink={true}
                   backgroundColor="bg-white"
                   border="border-primary border-2"
-                  additionalClasses=" text-primary"
+                  additionalClasses=" text-primary w-full sm:w-fit"
                   icon={
                     <img
                       src="/icons/calendar-2.svg"

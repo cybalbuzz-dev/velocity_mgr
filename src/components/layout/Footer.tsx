@@ -57,7 +57,7 @@ const socialIcons = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#012a27] text-white px-6 py-10 text-sm">
+    <footer className="bg-[#012a27] text-white  py-10 text-sm">
       <div className="container1">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Branding */}
