@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import localFont from "next/font/local";
+import { ParagraphAny, ParagraphLink1, ParagraphLink2 } from "./Text";
 
 const body_Font = localFont({
   src: "../../../public/fonts/GeneralSans-Medium.ttf",
@@ -53,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({
   if (isLink && href) {
     return (
       <Link href={href} passHref className={commonClasses} onClick={onClick}>
-        <p>{content}</p>
+        <ParagraphAny>{content}</ParagraphAny>
       </Link>
     );
   }
@@ -65,7 +66,7 @@ const Button: React.FC<ButtonProps> = ({
       className={commonClasses}
       disabled={disabled}
     >
-      {content}
+      <ParagraphAny>{content}</ParagraphAny>
     </button>
   );
 };

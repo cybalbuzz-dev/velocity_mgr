@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Button from "../ui/Button";
 import { ParagraphLink1 } from "../ui/Text";
@@ -16,6 +16,16 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
@@ -31,9 +41,7 @@ export default function Header() {
         <ParagraphLink1
           className={
             pathname === href
-              ? `${
-                  isMobile ? "text-primary " : "text-primary "
-                }`
+              ? `${isMobile ? "text-primary" : "text-primary"}`
               : ""
           }
         >
@@ -43,63 +51,112 @@ export default function Header() {
     ));
 
   return (
-    <div className="flex flex-col container1 w-full">
-      <div className="mt-[56px] py-[16px] px-[56px] bg-bg_gray rounded-[8px] flex justify-between gap-[50px] w-full items-center">
-        <Link href="/" className="flex items-center">
-          <img
-            src="/images/logo1.svg"
-            alt="Logo"
-            className="xl:h-[24px] h-[21px] xl:flex hidden"
-          />
-        </Link>
-
-        <div className="lg:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none text-2xl">
-            =
-          </button>
-        </div>
-
-        <div className="gap-[32px] items-center hidden lg:flex">
-          {renderLinks()}
-        </div>
-
-        <div className=" gap-[32px] items-center hidden lg:flex">
-          <Link href="/contact-us">
-            <ParagraphLink1>Request Demo</ParagraphLink1>
+    <div
+      className={`fixed z-50 w-full transition-all duration-500 ${
+        scrolled ? "top-0" : "top-[56px]"
+      }`}
+    >
+      <div className="flex flex-col container1 w-full">
+        <div className="py-[16px] px-4 sm:px-[56px] bg-bg_gray rounded-[8px] flex justify-between gap-[50px] w-full items-center">
+          <Link href="/" className="flex items-center">
+            <img
+              src="/images/logo1.svg"
+              alt="Logo"
+              className="xl:h-[24px] h-[21px] "
+            />
           </Link>
-          <Button
-            text="Sign in"
-            href="/"
-            isLink={true}
-            backgroundColor="bg-white"
-            additionalClasses="border-secondary- text-black"
-          />
-          <Button
-            text="Get started for free"
-            href="/"
-            isLink={true}
-            backgroundColor="bg-primary"
-            additionalClasses="border-secondary- text-white"
-          />
-        </div>
-      </div>
 
-      {/* Mobile Dropdown */}
-      {menuOpen && (
-        <div className="p-[24px] flex flex-col justify-center  items-center">
-          <div className="container1 flex flex-col w-full space-y-[24px] items-center">
-            {renderLinks(true)}
+          <div className="lg:hidden">
+            <button
+              onClick={toggleMenu}
+              className="focus:outline-none text-2xl"
+            >
+              {menuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="xl:w-[24px] w-[21px] xl:h-[24px]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="xl:w-[24px] w-[21px] xl:h-[24px]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          <div className="gap-[32px] items-center hidden lg:flex">
+            {renderLinks()}
+          </div>
+
+          <div className=" gap-[32px] items-center hidden lg:flex">
+            <Link href="/contact-us">
+              <ParagraphLink1>Request Demo</ParagraphLink1>
+            </Link>
             <Button
-              text="Contact us"
-              href="/contact-us"
+              text="Sign in"
+              href="/"
               isLink={true}
-              onClick={closeMenu}
-              backgroundColor="bg-l_green"
+              backgroundColor="bg-white"
               additionalClasses="border-secondary- text-black"
+            />
+            <Button
+              text="Get started for free"
+              href="/"
+              isLink={true}
+              backgroundColor="bg-primary"
+              additionalClasses="border-secondary- text-white"
             />
           </div>
         </div>
-      )}
+
+        {menuOpen && (
+          <div className="p-[24px] flex flex-col bg-bg_gray justify-center items-center">
+            <div className="container1 flex flex-col w-full space-y-[24px] items-center">
+              {renderLinks(true)}
+              <div className=" gap-[32px] items-center lg:flex-row flex flex-col">
+                <Link href="/contact-us">
+                  <ParagraphLink1>Request Demo</ParagraphLink1>
+                </Link>
+                <Button
+                  text="Sign in"
+                  href="/"
+                  isLink={true}
+                  backgroundColor="bg-white"
+                  additionalClasses="border-secondary- text-black"
+                />
+                <Button
+                  text="Get started for free"
+                  href="/"
+                  isLink={true}
+                  backgroundColor="bg-primary"
+                  additionalClasses="border-secondary- text-white"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

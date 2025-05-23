@@ -1,1 +1,0 @@
-# GrandioSegrinE-shop1
