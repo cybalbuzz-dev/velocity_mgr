@@ -1,19 +1,32 @@
-/** @format */
+"use client";
 
 import React from "react";
+import { useEffect, useState } from "react";
 import { Header1, Paragraph3, ParagraphLink1 } from "@/components/ui/Text";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
 
 const Hero = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    checkScreen(); // initial
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
   return (
     <>
       <div
-        className="lg:pt-[200px] pt-[106px] "
+        className="lg:pt-[200px] pt-[106px]"
         style={{
-          // height: "140vh",
-          background:
-            "linear-gradient(to bottom, #a2e4e69a 10%, #e4f6f79a 80%, #ffffff 100%)",
+          background: isLargeScreen
+            ? "linear-gradient(to bottom, #a2e4e69a 10%, #e4f6f79a 80%, #ffffff 100%)"
+            : "white",
         }}
       >
         <div className="  text-[#e4f6f79a]-  ">
