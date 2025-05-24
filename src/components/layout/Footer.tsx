@@ -63,6 +63,7 @@ const Footer: React.FC = () => {
           {/* Left Branding */}
           <div className="md:col-span-1">
             <h2 className="text-lg font-bold">VELOCITYMGR</h2>
+            
             <Paragraph2 className="mt-2 max-w-[300px]">
               Your All-in-One Platform For Smarter Shift Scheduling, Time
               Tracking, Payroll, And Team Audits—Designed For Agencies That

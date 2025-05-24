@@ -20,7 +20,7 @@ const Section6: React.FC = () => {
               href="/"
               isLink={true}
               backgroundColor="bg-[#FDC298]"
-              additionalClasses="border-secondary- text-primary"
+              additionalClasses="border-secondary- w-full sm:w-fit text-primary"
             />{" "}
           </div>
         </div>

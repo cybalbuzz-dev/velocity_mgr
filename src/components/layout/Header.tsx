@@ -53,11 +53,11 @@ export default function Header() {
   return (
     <div
       className={`fixed z-50 w-full transition-all duration-500 ${
-        scrolled ? "top-0" : "top-[56px]"
+        scrolled ? "top-0 bg-bg_gray" : "lg:top-[56px] bg-bg_gray lg:bg-transparent "
       }`}
     >
       <div className="flex flex-col container1 w-full">
-        <div className="py-[16px] px-4 sm:px-[56px] bg-bg_gray rounded-[8px] flex justify-between gap-[50px] w-full items-center">
+        <div className="py-[16px]  sm:px-[56px] bg-bg_gray rounded-[8px] flex justify-between gap-[50px] w-full items-center">
           <Link href="/" className="flex items-center">
             <img
               src="/images/logo1.svg"
@@ -66,10 +66,10 @@ export default function Header() {
             />
           </Link>
 
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <button
               onClick={toggleMenu}
-              className="focus:outline-none text-2xl"
+              className="focus:outline-none text-2xl text-primary"
             >
               {menuOpen ? (
                 <svg
@@ -105,11 +105,11 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="gap-[32px] items-center hidden lg:flex">
+          <div className="gap-[32px] items-center hidden xl:flex">
             {renderLinks()}
           </div>
 
-          <div className=" gap-[32px] items-center hidden lg:flex">
+          <div className=" gap-[32px] items-center hidden xl:flex">
             <Link href="/contact-us">
               <ParagraphLink1>Request Demo</ParagraphLink1>
             </Link>
@@ -134,7 +134,7 @@ export default function Header() {
           <div className="p-[24px] flex flex-col bg-bg_gray justify-center items-center">
             <div className="container1 flex flex-col w-full space-y-[24px] items-center">
               {renderLinks(true)}
-              <div className=" gap-[32px] items-center lg:flex-row flex flex-col">
+              <div className=" gap-[32px] items-center xl:flex-row flex flex-col">
                 <Link href="/contact-us">
                   <ParagraphLink1>Request Demo</ParagraphLink1>
                 </Link>

@@ -45,12 +45,12 @@ const cardData = [
 
 function Section1() {
   return (
-    <div className=" container1 flex flex-col mt-[80px]">
+    <div className=" container1 flex flex-col mt-[32px] sm:mt-[80px]">
       <SectionHeader
         title="Everything you need to run a smarter team"
         description="One platform, every shift, every team mate, every detail—covered."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[48px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[48px] ">
         {cardData.map((card, index) => (
           <Card
             key={index}
@@ -60,14 +60,14 @@ function Section1() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] mt-[80px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[24px] sm:gap-[48px] mt-[32px] sm:mt-[80px]">
         <img
           src="/images/peoplehold.svg"
           alt=""
-          className="flex justify-center items-center "
+          className="order-2 md:order-1 flex justify-center items-center"
         />
 
-        <div>
+        <div className="order-1 md:order-2">
           <Header2 className=" mb-[16px]">
             Built for shifts and hourly teams.
           </Header2>
@@ -91,15 +91,13 @@ function Section1() {
             <span className="font-bold">Field & Facility Staff</span> – Split
             locations, independent assignments, tight tracking.
           </Paragraph2>
-          <div
-            className=" flex mt-[40px] "
-          >
+          <div className=" flex mt-[40px] ">
             <Button
               text="Set Up Velocity Manager for Your Team"
               href="/"
               isLink={true}
               backgroundColor="bg-primary"
-              additionalClasses="border-secondary- text-white"
+              additionalClasses="border-secondary- w-full sm:w-fit text-white"
             />
           </div>
         </div>

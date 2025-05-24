@@ -35,7 +35,7 @@ export const Header1: React.FC<{
   className?: string;
 }> = ({ children, className = "" }) => (
   <h1
-    className={`text-[34px] sm:text-[64px] xl:text-[74px]   sm:leading-[78px]   ${body_Font_Regular.className} ${className}`}
+    className={`text-[24px] sm:text-[64px] xl:text-[74px]   sm:leading-[78px]   ${body_Font_Regular.className} ${className}`}
   >
     {children}
   </h1>
@@ -47,7 +47,7 @@ export const Header2: React.FC<{
   className?: string;
 }> = ({ children, className = "" }) => (
   <h1
-    className={`text-[32px] sm:text-[48px]   ${body_Font_Regular.className} ${className}`}
+    className={`text-[20px] sm:text-[48px]   ${body_Font_Regular.className} ${className}`}
   >
     {children}
   </h1>
@@ -79,11 +79,11 @@ export const Paragraph1: React.FC<{
   children: React.ReactNode;
   className?: string;
 }> = ({ children, className = "" }) => (
-  <h1
+  <p
     className={`text-[14px] sm:text-[16px] leading-[24px] sm:leading-[28px] md:leading-[32px] lg:leading-[36px] xl:leading-[38px] 2xl:leading-[40px]  ${body_p_regular.className} ${className}`}
   >
     {children}
-  </h1>
+  </p>
 );
 
 export const Paragraph2: React.FC<{

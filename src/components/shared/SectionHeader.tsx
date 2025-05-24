@@ -12,8 +12,8 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   description,
 }) => {
   return (
-    <div className="text-center mb-[56px] ">
-      <Header2 className=" mb-[16px]">{title}</Header2>
+    <div className="text-center mb-[32px] sm:mb-[56px] ">
+      <Header2 className="mb-[8px] sm:mb-[16px]">{title}</Header2>
       <Paragraph3 className="">{description}</Paragraph3>
     </div>
   );

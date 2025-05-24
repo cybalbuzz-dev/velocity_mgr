@@ -41,19 +41,21 @@ function Questions() {
   ];
 
   return (
-    <div className="p-6 bg-[#D1E3E4] rounded-[24px]">
-      <div data-aos="fade-left">
+    <div className="sm:p-6 p-2 bg-[#D1E3E4] rounded-lg sm:rounded-[24px]">
+      <div
+        // data-aos="fade-left"
+      >
         {questions.map((item, index) => (
           <div
             key={index}
-            className={`mb-4 px-[32px] rounded-[24px] ${
+            className={`mb-4 px-[14px] sm:px-[32px] rounded-lg sm:rounded-[24px] ${
               openSection === index
-                ? "bg-white py-[40px]"
-                : "bg-white [#e8f6f5] py-[64px]"
+                ? "sm:bg-white py-[10px] sm:py-[40px]"
+                : "sm:bg-white [#e8f6f5] py-[12px] sm:py-[64px]"
             } p-4 transition-colors duration-300`}
           >
             <button
-              className="w-full text-left flex justify-between items-center text-[17px] font-semibold"
+              className="w-full text-left flex justify-between items-center text-[17px] sm:font-semibold"
               onClick={() => toggleSection(index)}
             >
               <Header3> Q. {item.title} </Header3>

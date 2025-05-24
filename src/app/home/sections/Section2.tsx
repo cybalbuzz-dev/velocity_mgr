@@ -27,12 +27,12 @@ const cardData = [
 
 function Section2() {
   return (
-    <div className=" container1 flex flex-col mt-[80px]">
+    <div className=" container1 flex flex-col mt-[32px] sm:mt-[80px]">
       <SectionHeader
         title="More Control. Less Chaos."
         description="Run your complex Team Ops with the tool designed to make them easy."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[48px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[48px] ">
         {cardData.map((card, index) => (
           <Card
             key={index}
@@ -42,7 +42,7 @@ function Section2() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-[48px] mt-[80px]">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-[24px] sm:gap-[48px] mt-[80px]">
         <div className="sm:col-span-2">
           <Card
             title="Stay on top of scheduling changes — in real-time"
