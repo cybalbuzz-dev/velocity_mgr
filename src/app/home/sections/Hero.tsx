@@ -26,7 +26,7 @@ const Hero = () => {
                 Team.
               </Header1>
 
-              <Paragraph3 className=" my-[30px]">
+              <Paragraph3 className=" mb-[24px] mt-[8px] sm:my-[30px]">
                 Set up teams, schedule shifts, verify clock-ins, and streamline
                 payroll — all in one platform.
               </Paragraph3>
