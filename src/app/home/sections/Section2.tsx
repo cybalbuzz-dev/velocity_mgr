@@ -8,19 +8,19 @@ const cardData = [
     title: "Save time on boring and repetitive admin tasks",
     description:
       " Automate repetitive processes so you can focus on what really matters — managing people, not spreadsheets.",
-    imageUrl: "/images/place02.svg",
+    imageUrl: "/images/place012.svg",
   },
   {
     title: "Reduce absenteeism and time theft",
     description:
       "Real-time tracking and smart clock-ins keep everyone accountable and on schedule.",
-    imageUrl: "/images/place03.svg",
+    imageUrl: "/images/place01.svg",
   },
   {
     title: "Increase accountability and team transparency",
     description:
       "Give managers and team members full visibility into shifts, hours worked, and attendance history.",
-    imageUrl: "/images/place02.svg",
+    imageUrl: "/images/place06.svg",
   },
   
 ];

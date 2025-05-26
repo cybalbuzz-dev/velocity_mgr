@@ -12,7 +12,7 @@ const Hero = () => {
         className="lg:pt-[200px] pt-[106px] "
         style={{
           background:
-            "linear-gradient(to bottom, #a2e4e69a 10%, #e4f6f79a 80%, #ffffff 100%)",
+            "linear-gradient(to bottom, #a2e4e69a 10%, #e4f6f79a 80%, #EAF3F3 100%)",
         }}
       >
         <div className="  text-[#e4f6f79a]-  ">

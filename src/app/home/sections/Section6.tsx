@@ -26,7 +26,7 @@ const Section6: React.FC = () => {
         </div>
         <div className="flex gap-4">
           <img
-            src="/images/phone01.svg"
+            src="/images/place013.svg"
             alt="Mobile Screenshot Left"
             // className="w-40 md:w-48 lg:w-56"
           />

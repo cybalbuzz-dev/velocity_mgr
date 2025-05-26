@@ -55,31 +55,40 @@ const FeatureComparisonTable: React.FC = () => {
       <table className="min-w-full bg-white rounded-lg  text-left text-sm">
         <thead className="">
           <tr>
-            <th className="px-6 py-4 border-r-2 border-b-2 border-primary">
+            <th className="px-6 py-4  border-b-2 border-[#]">
               <ParagraphLink1>Feature</ParagraphLink1>
             </th>
-            <th className="px-6 py-4 border-l-2 border-b-2 border-primary">
-              <img src="/images/logo2.svg" className="h-[23px] min-h-[24px]" alt="" />
+            <th className="px-6 bg-[#DAF8F8] py-4  border-b-2 border-[#]">
+              <img
+                src="/images/logo2.svg"
+                className="h-[23px] min-h-[24px]"
+                alt=""
+              />
             </th>
-            <th className="px-6 py-4 border-l-2 border-b-2 border-primary">
+            <th className="px-6 py-4  border-b-2 border-[#]">
               <ParagraphLink1>Legacy Tools</ParagraphLink1>
             </th>
           </tr>
         </thead>
         <tbody>
-          {features.map(({ feature, velocityMor, legacyTools }, index) => (
-            <tr key={index} className="">
-              <td className="px-6 py-4 border-r-2 border-b-2 border-primary">
-                <Paragraph2>{feature}</Paragraph2>
-              </td>
-              <td className="px-6 py-4 border-l-2 border-b-2 border-primary">
-                <Paragraph2>{velocityMor}</Paragraph2>
-              </td>
-              <td className="px-6 py-4 border-l-2 border-b-2 border-primary">
-                <Paragraph2>{legacyTools}</Paragraph2>
-              </td>
-            </tr>
-          ))}
+          {features.map(({ feature, velocityMor, legacyTools }, index) => {
+            const isLast = index === features.length - 1;
+            const borderClass = isLast ? "" : "border-b-2 border-[#]";
+
+            return (
+              <tr key={index}>
+                <td className={`px-6 py-4 ${borderClass}`}>
+                  <Paragraph2>{feature}</Paragraph2>
+                </td>
+                <td className={`px-6 py-4 bg-[#DAF8F8] ${borderClass}`}>
+                  <Paragraph2>{velocityMor}</Paragraph2>
+                </td>
+                <td className={`px-6 py-4 ${borderClass}`}>
+                  <Paragraph2>{legacyTools}</Paragraph2>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
