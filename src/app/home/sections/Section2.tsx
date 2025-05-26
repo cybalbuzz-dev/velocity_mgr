@@ -32,7 +32,7 @@ function Section2() {
         title="More Control. Less Chaos."
         description="Run your complex Team Ops with the tool designed to make them easy."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[16px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[24px] ">
         {cardData.map((card, index) => (
           <Card
             key={index}
@@ -42,13 +42,13 @@ function Section2() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-[24px] sm:gap-[16px] mt-[24px] sm:mt-[24px]">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-[24px] sm:gap-[24px] mt-[24px] sm:mt-[24px]">
         <div className="sm:col-span-2">
           <Card
             title="Stay on top of scheduling changes — in real-time"
             description="Receive instant notifications and make updates on the fly without disrupting workflows."
             imageUrl="/images/place04.svg"
-            imageHeight="h-[400px] - h-full "
+            imageHeight="h-[400px] - - h-full "
           />
         </div>
 
@@ -57,7 +57,7 @@ function Section2() {
             title="Grow confidently with scalable tools"
             description="Whether you manage 5 or 500 employees, Velocity Manager grows with your team — no added complexity."
             imageUrl="/images/place05.svg"
-            imageHeight="h-[430px] - min- h-full-"
+            imageHeight="h-[443px] - min- h-full-"
           />
         </div>
       </div>

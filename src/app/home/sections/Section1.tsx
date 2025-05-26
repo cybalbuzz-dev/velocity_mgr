@@ -50,7 +50,7 @@ function Section1() {
         title="Everything you need to run a smarter team"
         description="One platform, every shift, every team mate, every detail—covered."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[16px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[24px] ">
         {cardData.map((card, index) => (
           <Card
             key={index}

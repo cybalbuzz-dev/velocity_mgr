@@ -53,11 +53,17 @@ export default function Header() {
   return (
     <div
       className={`fixed z-50 w-full transition-all duration-500 ${
-        scrolled ? "top-0 bg-bg_gray" : "lg:top-[56px] bg-bg_gray lg:bg-transparent "
+        scrolled
+          ? "top-0 bg-bg_gray"
+          : "lg:top-[56px] bg-bg_gray lg:bg-transparent "
       }`}
     >
       <div className="flex flex-col container1 w-full">
-        <div className="py-[16px]  sm:px-[56px] bg-bg_gray rounded-[8px] flex justify-between gap-[50px] w-full items-center">
+        <div
+          className={`py-[16px] transition-all duration-500  bg-bg_gray rounded-[8px] flex justify-between gap-[50px] w-full items-center ${
+            scrolled ? "" : "sm:px-[56px] "
+          }`}
+        >
           <Link href="/" className="flex items-center">
             <img
               src="/images/logo1.svg"
