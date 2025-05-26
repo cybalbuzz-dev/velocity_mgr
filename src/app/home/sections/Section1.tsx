@@ -64,7 +64,7 @@ function Section1() {
         <img
           src="/images/peoplehold.svg"
           alt=""
-          className="order-2 md:order-1 flex justify-center items-center"
+          className="order-2 md:order-1 rounded-lg flex justify-center items-center"
         />
 
         <div className="order-1 md:order-2">
