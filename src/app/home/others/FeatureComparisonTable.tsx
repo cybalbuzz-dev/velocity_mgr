@@ -58,14 +58,16 @@ const FeatureComparisonTable: React.FC = () => {
             <th className="px-6 py-4  border-b-2 border-[#]">
               <ParagraphLink1>Feature</ParagraphLink1>
             </th>
-            <th className="px-6 bg-[#DAF8F8] py-4  border-b-2 border-[#]">
-              <img
-                src="/images/logo2.svg"
-                className="h-[23px] min-h-[24px]"
-                alt=""
-              />
+            <th className="px-6 bg-[#DAF8F8] py-4 border-b-2 border-[#]">
+              <div className="flex justify-center ">
+                <img
+                  src="/images/logo2.svg"
+                  className="h-[23px] min-h-[24px]"
+                  alt=""
+                />
+              </div>
             </th>
-            <th className="px-6 py-4  border-b-2 border-[#]">
+            <th className="px-6 py-4 text-center border-b-2 border-[#]">
               <ParagraphLink1>Legacy Tools</ParagraphLink1>
             </th>
           </tr>
@@ -77,13 +79,15 @@ const FeatureComparisonTable: React.FC = () => {
 
             return (
               <tr key={index}>
-                <td className={`px-6 py-4 ${borderClass}`}>
+                <td className={`px-6  py-4 ${borderClass}`}>
                   <Paragraph2>{feature}</Paragraph2>
                 </td>
-                <td className={`px-6 py-4 bg-[#DAF8F8] ${borderClass}`}>
+                <td
+                  className={`px-6 py-4 text-center bg-[#DAF8F8] ${borderClass}`}
+                >
                   <Paragraph2>{velocityMor}</Paragraph2>
                 </td>
-                <td className={`px-6 py-4 ${borderClass}`}>
+                <td className={`px-6 text-center py-4 ${borderClass}`}>
                   <Paragraph2>{legacyTools}</Paragraph2>
                 </td>
               </tr>

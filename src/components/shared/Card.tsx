@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({
       <img
         src={imageUrl}
         alt={title}
-        className={`w-full object-cover ${imageHeight}`}
+        className={`w-full object-contain ${imageHeight}`}
       />
     </div>
   );

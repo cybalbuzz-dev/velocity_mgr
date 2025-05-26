@@ -53,7 +53,7 @@ const StarRating = () => (
 
 export default function TestimonialCards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[40px] ">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[16px] ">
       {testimonials.map((testimonial, index) => (
         <div
           key={index}

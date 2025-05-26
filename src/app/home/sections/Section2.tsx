@@ -32,7 +32,7 @@ function Section2() {
         title="More Control. Less Chaos."
         description="Run your complex Team Ops with the tool designed to make them easy."
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[48px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] sm:gap-[16px] ">
         {cardData.map((card, index) => (
           <Card
             key={index}
@@ -42,7 +42,7 @@ function Section2() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-[24px] sm:gap-[48px] mt-[80px]">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-[24px] sm:gap-[16px] mt-[24px] sm:mt-[24px]">
         <div className="sm:col-span-2">
           <Card
             title="Stay on top of scheduling changes — in real-time"
