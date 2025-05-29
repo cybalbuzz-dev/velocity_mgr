@@ -61,7 +61,7 @@ const FeatureComparisonTable: React.FC = () => {
             <th className="px-6 bg-[#DAF8F8] py-4 border-b-2 border-[#]">
               <div className="flex justify-center ">
                 <img
-                  src="/images/logo2.svg"
+                  src="/images/logo1.svg"
                   className="h-[23px] min-h-[24px]"
                   alt=""
                 />

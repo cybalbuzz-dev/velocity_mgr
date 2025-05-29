@@ -26,17 +26,17 @@ function Questions() {
     {
       title: "What happens after the 3-month free trial?",
       content:
-        "After your 3-month free trial, you can choose a subscription plan that best fits your team's needs. All your data, settings, and activity will remain intact, and you can continue using VELOCITYMGR without interruption by upgrading to a paid plan.",
+        "After your 3-month free trial, you can choose a subscription plan that best fits your team's needs. All your data, settings, and activity will remain intact, and you can continue using VELOCITY MANAGER without interruption by upgrading to a paid plan.",
     },
     {
       title: "Can I import my team or existing data?",
       content:
-        "Yes! VELOCITYMGR allows you to easily import your team, shift schedules, and other essential data using our CSV import tool or through direct integration with your current systems. Our support team is also available to help you with onboarding.",
+        "Yes! VELOCITY MANAGER allows you to easily import your team, shift schedules, and other essential data using our CSV import tool or through direct integration with your current systems. Our support team is also available to help you with onboarding.",
     },
     {
       title: "Do I need to train my team?",
       content:
-        "VELOCITYMGR is designed to be intuitive and easy to use. Most teams can get started without formal training. However, we provide helpful onboarding guides, tutorial videos, and customer support to ensure a smooth experience for everyone.",
+        "VELOCITY MANAGER is designed to be intuitive and easy to use. Most teams can get started without formal training. However, we provide helpful onboarding guides, tutorial videos, and customer support to ensure a smooth experience for everyone.",
     },
   ];
 

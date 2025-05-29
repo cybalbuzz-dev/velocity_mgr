@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Branding */}
           <div className="md:col-span-1">
-            <h2 className="text-lg font-bold">VELOCITYMGR</h2>
+            <h2 className="text-lg font-bold">VELOCITY MANAGER</h2>
             
             <Paragraph2 className="mt-2 max-w-[300px]">
               Your All-in-One Platform For Smarter Shift Scheduling, Time
