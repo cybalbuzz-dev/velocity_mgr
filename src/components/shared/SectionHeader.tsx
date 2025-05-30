@@ -1,6 +1,6 @@
 // components/SectionHeader.tsx
 import React from "react";
-import { Header2, Header3, Paragraph2, Paragraph3 } from "../ui/Text";
+import { Header2, Paragraph3 } from "../ui/Text";
 
 interface SectionHeaderProps {
   title: string;

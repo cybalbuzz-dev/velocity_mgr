@@ -58,10 +58,10 @@ const FeatureComparisonTable: React.FC = () => {
             <th className="px-6 py-4  border-b-2 border-[#]">
               <ParagraphLink1>Feature</ParagraphLink1>
             </th>
-            <th className="px-6 bg-[#DAF8F8] py-4 border-b-2 border-[#]">
+            <th className="px-6 bg-[#FDC298] py-4 border-b-2 border-[#]">
               <div className="flex justify-center ">
                 <img
-                  src="/images/logo1.svg"
+                  src="/images/logo2.svg"
                   className="h-[23px] min-h-[24px]"
                   alt=""
                 />
@@ -83,7 +83,7 @@ const FeatureComparisonTable: React.FC = () => {
                   <Paragraph2>{feature}</Paragraph2>
                 </td>
                 <td
-                  className={`px-6 py-4 text-center bg-[#DAF8F8] ${borderClass}`}
+                  className={`px-6 py-4 text-center bg-[#FDC298] ${borderClass}`}
                 >
                   <Paragraph2>{velocityMor}</Paragraph2>
                 </td>

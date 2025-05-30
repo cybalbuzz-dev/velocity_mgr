@@ -14,13 +14,13 @@ const cardData = [
     title: "Reduce absenteeism and time theft",
     description:
       "Real-time tracking and smart clock-ins keep everyone accountable and on schedule.",
-    imageUrl: "/images/place01.svg",
+    imageUrl: "/images/place016.svg",
   },
   {
     title: "Increase accountability and team transparency",
     description:
       "Give managers and team members full visibility into shifts, hours worked, and attendance history.",
-    imageUrl: "/images/place06.svg",
+    imageUrl: "/images/place017.svg",
   },
   
 ];
@@ -42,8 +42,8 @@ function Section2() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-[24px] sm:gap-[24px] mt-[24px] sm:mt-[24px]">
-        <div className="sm:col-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-7 gap-[24px] sm:gap-[24px] mt-[24px] sm:mt-[24px]">
+        <div className="sm:col-span-3">
           <Card
             title="Stay on top of scheduling changes — in real-time"
             description="Receive instant notifications and make updates on the fly without disrupting workflows."
@@ -52,12 +52,12 @@ function Section2() {
           />
         </div>
 
-        <div className="sm:col-span-3">
+        <div className="sm:col-span-4">
           <Card
             title="Grow confidently with scalable tools"
             description="Whether you manage 5 or 500 employees, Velocity Manager grows with your team — no added complexity."
             imageUrl="/images/place05.svg"
-            imageHeight="h-[443px] - min- h-full-"
+            imageHeight="h-[453px] - min- h-full-"
           />
         </div>
       </div>

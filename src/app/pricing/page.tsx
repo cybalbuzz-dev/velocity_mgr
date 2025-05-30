@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import Hero from "./sections/Hero";
 
 function page() {
   return (
-    <div>page</div>
-  )
+    <div
+      style={{
+        backgroundImage: 'url("/images/dotted-lines.svg")',
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+        minHeight: "200vh",
+      }}
+    >
+      <Hero />
+    </div>
+  );
 }
 
-export default page
+export default page;
