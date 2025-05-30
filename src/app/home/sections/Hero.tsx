@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center py-2 container1 mt-[32px] sm:mt-[74px]">
-        <img src="/images/frame001.svg" alt="" />
+        <img src="/images/place018.svg" alt="" />
       </div>
     </>
   );

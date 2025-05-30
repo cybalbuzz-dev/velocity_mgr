@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="container1 py-2 mt-[32px] sm:mt-[74px]">
+        <div className="hidden container1 py-2 mt-[32px] sm:mt-[74px]">
           <Header3>Features That Empower Your Church Community</Header3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">

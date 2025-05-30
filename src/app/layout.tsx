@@ -9,11 +9,11 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "VELOCITYMGR – Smarter Team Management and Workforce Automation",
+  title: "VELOCITY MANAGER – Smarter Team Management and Workforce Automation",
   description:
-    "VELOCITYMGR is the all-in-one platform for smart scheduling, time tracking, payroll automation, and task management. Streamline operations and boost productivity with ease.",
+    "VELOCITY MANAGER is the all-in-one platform for smart scheduling, time tracking, payroll automation, and task management. Streamline operations and boost productivity with ease.",
   generator:
-    "VELOCITYMGR, smart scheduling, time tracking, payroll software, workforce management, shift planning, HR automation, open shifts marketplace, expense tracking, team productivity",
+    "VELOCITY MANAGER, smart scheduling, time tracking, payroll software, workforce management, shift planning, HR automation, open shifts marketplace, expense tracking, team productivity",
   keywords: [
     "workforce management",
     "team scheduling",
@@ -44,33 +44,33 @@ export const metadata: Metadata = {
     "employee time monitoring",
     "workplace automation",
     "digital workforce tools",
-    "VELOCITYMGR",
+    "VELOCITY MANAGER",
   ],
 
-  applicationName: "VELOCITYMGR",
+  applicationName: "VELOCITY MANAGER",
   openGraph: {
-    title: "VELOCITYMGR – Smarter Team Management and Workforce Automation",
+    title: "VELOCITY MANAGER – Smarter Team Management and Workforce Automation",
     description:
-      "Manage your team the smart way with VELOCITYMGR. Schedule shifts, track time, automate payroll, and streamline task execution — all in one platform.",
-    url: "https://www.velocitymgr.com",
-    siteName: "VELOCITYMGR",
+      "Manage your team the smart way with VELOCITY MANAGER. Schedule shifts, track time, automate payroll, and streamline task execution — all in one platform.",
+    url: "https://www.VELOCITY MANAGER.com",
+    siteName: "VELOCITY MANAGER",
     images: [
       {
-        url: "https://res.cloudinary.com/dipwsq5cg/image/upload/v1740640203/Screenshot_2025-02-27_080849_t6c2iz.png", // Replace with VELOCITYMGR branding if available
+        url: "https://res.cloudinary.com/dipwsq5cg/image/upload/v1740640203/Screenshot_2025-02-27_080849_t6c2iz.png", // Replace with VELOCITY MANAGER branding if available
         width: 1200,
         height: 630,
-        alt: "VELOCITYMGR – Smarter Workforce Management",
+        alt: "VELOCITY MANAGER – Smarter Workforce Management",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@velocitymgr",
-    title: "VELOCITYMGR – Smarter Team Management and Workforce Automation",
+    site: "@VELOCITY MANAGER",
+    title: "VELOCITY MANAGER – Smarter Team Management and Workforce Automation",
     description:
-      "Automate how you manage teams, track time, and run payroll — with VELOCITYMGR.",
+      "Automate how you manage teams, track time, and run payroll — with VELOCITY MANAGER.",
     images:
-      "https://res.cloudinary.com/dipwsq5cg/image/upload/v1740640203/Screenshot_2025-02-27_080849_t6c2iz.png", // Replace with VELOCITYMGR image if available
+      "https://res.cloudinary.com/dipwsq5cg/image/upload/v1740640203/Screenshot_2025-02-27_080849_t6c2iz.png", // Replace with VELOCITY MANAGER image if available
   },
 };
 

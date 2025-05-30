@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Header2, Header3, Paragraph1, Paragraph2 } from "@/components/ui/Text";
+import Button from "@/components/ui/Button";
 
 const plans = [
   {
@@ -78,14 +79,14 @@ export default function PricingPlans() {
 
           {/* Labels */}
           <span
-            className={`z-10 w-1/2 text-center text-sm transition-colors duration-300 ${
+            className={`z-10 w-1/2 py-1 text-center text-sm transition-colors p duration-300 ${
               !isYearly ? "text-white" : "text-gray-700"
             }`}
           >
             <Paragraph1>Monthly</Paragraph1>
           </span>
           <span
-            className={`z-10 w-1/2 text-center text-sm transition-colors duration-300 ${
+            className={`z-10 w-1/2 py-1 text-center text-sm transition-colors duration-300 ${
               isYearly ? "text-white" : "text-gray-700"
             }`}
           >
@@ -106,19 +107,18 @@ export default function PricingPlans() {
             )}
           >
             <div>
-              <Header3 className="text-xl font-semibold mb-1">
+              <Header3 className="text-xl  mb-1">
                 {plan.name}{" "}
-                {plan.badge && (
-                  <span className="text-sm text-emerald-600 ml-1">
-                    ({plan.badge})
-                  </span>
-                )}
+                {plan.badge && <span className="text-s">({plan.badge})</span>}
               </Header3>
               <p className="text-sm ">{plan.description}</p>
               <Header2 className="mb-1">
                 ${isYearly ? plan.yearly.toFixed(2) : plan.monthly.toFixed(2)}
-                <span className="text-base font-normal">/user/month</span>
+                <span className="text-base font-normal">
+                  /user/{isYearly ? "year" : "month"}
+                </span>
               </Header2>
+
               <p className="text-xs text-gray-400 mb-4">
                 Best for{" "}
                 {plan.name === "Premium"
@@ -134,9 +134,18 @@ export default function PricingPlans() {
                 ))}
               </ul>
             </div>
-            <button className="mt-6 bg-emerald-600 text-white rounded-lg px-4 py-2 hover:bg-emerald-700">
-              Subscribe Today
-            </button>
+            <Button
+              text="Get started for free"
+              href="/"
+              isLink={true}
+              backgroundColor="bg-primary"
+              additionalClasses={cn(
+                "ni mt-6",
+                plan.name === "Standard"
+                  ? " border bg-white text-primary "
+                  : " bg-primary text-white"
+              )}
+            />
           </div>
         ))}
       </div>
