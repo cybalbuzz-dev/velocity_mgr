@@ -18,7 +18,7 @@ const footerLinks = [
       { name: "Account", url: "#" },
       { name: "FAQs", url: "#" },
       { name: "Newsletters", url: "#" },
-      { name: "Resources", url: "#" },
+      { name: "Resources", url: "/resources" },
     ],
   },
   {
