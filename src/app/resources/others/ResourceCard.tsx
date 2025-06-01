@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Header2, Header3, Paragraph1, ParagraphLink1 } from "@/components/ui/Text";
 
 interface ResourceCardProps {
   title: string;
@@ -17,7 +18,7 @@ export const ResourceCard = ({
   image,
 }: ResourceCardProps) => {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden transition hover:shadow-lg">
+    <div className="bg-white rounded-xl shadow-md- overflow-hidden transition hover:shadow-lg">
       <Image
         src={image}
         alt={title}
@@ -26,13 +27,13 @@ export const ResourceCard = ({
         className="w-full h-48 object-cover"
       />
       <div className="p-4">
-        <h2 className="text-xl font-semibold mb-2">{title}</h2>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        <Paragraph1 className="text-xl font-semibold mb-2">{title}</Paragraph1>
+        {/* <Paragraph1 className="text-gray-600 text-sm mb-4">{description}</Paragraph1> */}
         <Link
           href={`/resources/${slug}`}
-          className="text-blue-600 hover:underline font-medium"
+          className="text-primary hover:underline font-medium"
         >
-          Read More →
+          <ParagraphLink1> Read More → </ParagraphLink1>
         </Link>
       </div>
     </div>

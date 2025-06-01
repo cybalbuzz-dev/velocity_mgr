@@ -4,13 +4,9 @@ export const resources = [
     description:
       "Discover actionable guides, tools, and insights to elevate your skills and achieve your goals. Everything you need, all in one place.",
     slug: "empowering-resources",
-    image: "/resource-image.jpg", // place your uploaded image in /public
-  },
-  {
-    title: "Revolutionizing Healthcare with AI",
-    description:
-      "Learn how AI and data-driven tools are transforming patient care and outcomes.",
-    slug: "healthcare-ai",
-    image: "/resource-image.jpg",
+    image: "/images/zcover.svg", // place your uploaded image in /public
+
+    content:
+      "At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions. At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions. At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions.. At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions. At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. . We aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions. At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions. At Distinct.Ai, we’re redefining healthcare by combining AI, data, and patient insights to revolutionize rare illness treatment. Partnering with top Pharma, Biotech firms, and governing bodies like NIHR, we aim to empower patients and improve healthcare outcomes through smarter, patient-centric solutions.  ",
   },
 ];
